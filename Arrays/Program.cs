@@ -7,13 +7,13 @@ namespace Arrays
         static void Main(string[] args)
         {
 
-            int n = 21;
+            int n = 20;
             int summe = 0;
             int[] noten = new int[n];
-            for (int i = 1; i < n; i++) 
+            for (int i = 0; i < n; i++) 
             {
 
-                Console.WriteLine($"Bitte geben Sie die {i} Note ein");
+                Console.WriteLine($"Bitte geben Sie die {i+1} Note ein");
                 noten[i] = Convert.ToInt32(Console.ReadLine());
                 summe = summe + noten[i];
             }
